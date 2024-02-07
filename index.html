@@ -208,6 +208,9 @@
 			$(".main1").hide();
 			var boxSize = 60; // initial box size
 			var boxwidth = 160;
+			var top = 20;
+			var left =490;
+			var left1 =550;
 			var increaseSize = 30; // size increase for each click
 			var incrwidth = 40;
 			var maxClicks = 5; // maximum number of clicks
@@ -218,8 +221,12 @@
 				currentClicks++;
 				$("#btn1").css("height", boxSize + "px");
 				$("#btn1").css("width", boxwidth + "px");
+				$("#btn1,#btn2").css("top", top + "px");
+				$("#btn1").css("left", left + "px");
 				boxSize += increaseSize;
 				boxwidth += incrwidth;
+				top +=13;
+				left +=40;
 				console.log(currentClicks);
 
 				// remove click event handler after maxClicks
